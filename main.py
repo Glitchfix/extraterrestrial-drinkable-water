@@ -25,13 +25,14 @@ class WaterSafetyClassifier(nn.Module):
 
 # Hyperparameters
 # Number of input features (based on the parameters in the dataset)
-input_size = 7
+input_size = 9
 # Increased hidden sizes for complex representations
-hidden_sizes = [256, 512, 256, 128]
+hidden_sizes = [256, 512, 512, 256, 128]
 num_classes = 2  # Binary classification for drinkable and undrinkable water
 
 # Data preprocessing (replace with your dataset)
-data = pd.read_csv("water_samples.csv")  # Load the dataset from the CSV file
+# Replace with the path to your dataset
+data = pd.read_csv("water.csv")
 # Implement data preprocessing steps, such as handling missing values and feature scaling
 
 # Create an instance of the model
